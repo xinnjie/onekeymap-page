@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "홈",
+    "features": "기능",
+    "docs": "문서",
+    "pricing": "가격",
+    "blog": "블로그",
+    "download": "다운로드"
+  },
+  "hero": {
+    "title": "한 번 설정하면,<br />모든 곳에서 사용",
+    "subtitle": "에디터마다 단축키를 다시 설정할 필요가 없습니다. OneKeymap이 VS Code, IntelliJ IDEA, Zed 등에서 키 바인딩을 동기화합니다.",
+    "cta": "macOS용 다운로드",
+    "github": "GitHub에서 보기"
+  },
+  "features": {
+    "sectionTitle": "워크플로우 통합에 필요한 모든 것",
+    "sectionSubtitle": "OneKeymap은 작업을 더 쉽게 만드는 기능으로 가득합니다.",
+    "editor": {
+      "title": "통합 키맵 에디터",
+      "description": "직관적인 인터페이스에서 모든 키 바인딩을 관리하세요. 마찰 없이 단축키를 기록하고 편집하고 구성할 수 있습니다."
+    },
+    "sync": {
+      "title": "차이 미리보기가 있는 안전한 동기화",
+      "description": "디스크에 쓰기 전에 모든 변경 사항을 미리 봅니다. 통합 차이는 추가, 편집 및 제거를 강조 표시하므로 아무것도 놓치지 않습니다."
+    },
+    "import": {
+      "title": "원활한 가져오기",
+      "description": "VS Code, IntelliJ IDEA, Zed 등의 기존 단축키를 한 번의 클릭으로 OneKeymap으로 가져올 수 있습니다."
+    }
+  },
+  "footer": {
+    "madeBy": "xinnjie 제작",
+    "product": "제품",
+    "resources": "리소스",
+    "feedback": "피드백",
+    "features": "기능",
+    "pricing": "가격 및 플랜",
+    "changelog": "변경 로그",
+    "documentation": "문서",
+    "terms": "서비스 약관",
+    "privacy": "개인정보 보호정책",
+    "reportBug": "버그 신고",
+    "copyright": "© 2025 OneKeymap. 모든 권리 보유."
+  },
+  "pricing": {
+    "title": "당신에게 맞는 OneKeymap 플랜을 선택하세요",
+    "subtitle": "OneKeymap은 단축키를 동기화 상태로 유지하는 네이티브 macOS 앱입니다.",
+    "recommended": "추천",
+    "monthly": {
+      "name": "월간",
+      "description": "언제든지 취소할 수 있는 구독으로 OneKeymap에 유연하게 액세스하세요.",
+      "price": "$0.99",
+      "priceSuffix": "월간",
+      "feature1": "지원되는 모든 에디터에서 단축키 동기화",
+      "feature2": "월간 업데이트 및 새로운 기능",
+      "cta": "월간 플랜 시작"
+    },
+    "annually": {
+      "name": "연간",
+      "description": "가치와 유연성의 최상의 균형, 새로운 기능에 대한 우선 액세스.",
+      "price": "$3.99",
+      "priceSuffix": "연간",
+      "feature1": "지원되는 모든 에디터에서 단축키 동기화",
+      "feature2": "1년간 업데이트 및 새로운 기능",
+      "cta": "연간 플랜 시작"
+    },
+    "lifetime": {
+      "name": "평생",
+      "description": "한 번의 결제로 영원히 OneKeymap을 소유하고 향후 업데이트를 확보하세요.",
+      "price": "$12.99",
+      "priceSuffix": "일회성",
+      "feature1": "지원되는 모든 에디터에서 단축키 동기화",
+      "feature2": "평생 업데이트 및 새로운 기능",
+      "cta": "평생 라이선스 받기"
+    }
+  },
+  "auth": {
+    "signin": {
+      "title": "계정에 로그인",
+      "email": "이메일",
+      "emailPlaceholder": "corybarker@email.com",
+      "password": "비밀번호",
+      "passwordPlaceholder": "••••••••",
+      "submit": "로그인",
+      "forgotPassword": "비밀번호를 잊으셨나요"
+    },
+    "signup": {
+      "title": "계정 만들기",
+      "fullName": "전체 이름",
+      "fullNamePlaceholder": "홍길동",
+      "email": "이메일",
+      "emailPlaceholder": "corybarker@email.com",
+      "phone": "전화번호",
+      "phonePlaceholder": "(+82) 10-0000-0000",
+      "password": "비밀번호",
+      "passwordPlaceholder": "••••••••",
+      "submit": "가입",
+      "or": "또는",
+      "continueGithub": "GitHub으로 계속하기",
+      "agreementText": "가입하면 {terms} 및 {privacy}에 동의하는 것입니다.",
+      "terms": "서비스 약관",
+      "privacy": "개인정보 보호정책"
+    },
+    "resetPassword": {
+      "title": "비밀번호 재설정",
+      "email": "이메일",
+      "emailPlaceholder": "corybarker@email.com",
+      "submit": "비밀번호 재설정"
+    }
+  }
+}

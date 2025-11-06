@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "首页",
+    "features": "功能特性",
+    "docs": "文档",
+    "pricing": "价格",
+    "blog": "博客",
+    "download": "下载"
+  },
+  "hero": {
+    "title": "配置一次，<br />随处使用。",
+    "subtitle": "不再需要在编辑器之间重新映射快捷键。OneKeymap 在 VS Code、IntelliJ IDEA、Zed 等编辑器之间同步您的键绑定。",
+    "cta": "下载 macOS 版",
+    "github": "在 GitHub 上查看"
+  },
+  "features": {
+    "sectionTitle": "统一工作流所需的一切功能",
+    "sectionSubtitle": "OneKeymap 具备让您的工作更轻松的全部功能。",
+    "editor": {
+      "title": "统一的键位编辑器",
+      "description": "在一个直观的界面中管理所有键位绑定。零摩擦地录制、编辑和组织快捷键。"
+    },
+    "sync": {
+      "title": "带差异预览的安全同步",
+      "description": "在写入磁盘前预览每个更改。统一的差异视图突出显示添加、编辑和删除，确保不会遗漏任何内容。"
+    },
+    "import": {
+      "title": "无缝导入",
+      "description": "只需一次点击，即可将 VS Code、IntelliJ IDEA、Zed 等编辑器的现有快捷键导入 OneKeymap。"
+    }
+  },
+  "footer": {
+    "madeBy": "由 xinnjie 制作",
+    "product": "产品",
+    "resources": "资源",
+    "feedback": "反馈",
+    "features": "功能特性",
+    "pricing": "价格与计划",
+    "changelog": "更新日志",
+    "documentation": "文档",
+    "terms": "服务条款",
+    "privacy": "隐私政策",
+    "reportBug": "报告错误",
+    "copyright": " 2025 OneKeymap。保留所有权利。"
+  },
+  "pricing": {
+    "title": "选择适合您的 OneKeymap 方案",
+    "subtitle": "OneKeymap 是一个原生 macOS 应用，让您的快捷键保持同步。",
+    "recommended": "推荐",
+    "monthly": {
+      "name": "月度订阅",
+      "description": "灵活访问 OneKeymap，随时可取消订阅。",
+      "price": "$0.99",
+      "priceSuffix": "每月",
+      "feature1": "在所有支持的编辑器间同步快捷键",
+      "feature2": "每月更新和新功能",
+      "cta": "开始月度计划"
+    },
+    "annually": {
+      "name": "年度订阅",
+      "description": "最佳的价值与灵活性平衡，优先获取新功能。",
+      "price": "$3.99",
+      "priceSuffix": "每年",
+      "feature1": "在所有支持的编辑器间同步快捷键",
+      "feature2": "一年的更新和新功能",
+      "cta": "开始年度计划"
+    },
+    "lifetime": {
+      "name": "终身许可",
+      "description": "一次性付款永久拥有 OneKeymap，锁定未来更新。",
+      "price": "$12.99",
+      "priceSuffix": "一次性",
+      "feature1": "在所有支持的编辑器间同步快捷键",
+      "feature2": "终身更新和新功能",
+      "cta": "获取终身许可"
+    }
+  },
+  "auth": {
+    "signin": {
+      "title": "登录您的账户",
+      "email": "邮箱",
+      "emailPlaceholder": "corybarker@email.com",
+      "password": "密码",
+      "passwordPlaceholder": "••••••••",
+      "submit": "登录",
+      "forgotPassword": "忘记密码"
+    },
+    "signup": {
+      "title": "创建您的账户",
+      "fullName": "全名",
+      "fullNamePlaceholder": "张三",
+      "email": "邮箱",
+      "emailPlaceholder": "corybarker@email.com",
+      "phone": "手机",
+      "phonePlaceholder": "(+86) 138-0000-0000",
+      "password": "密码",
+      "passwordPlaceholder": "••••••••",
+      "submit": "注册",
+      "or": "或",
+      "continueGithub": "使用 GitHub 继续",
+      "agreementText": "注册即表示您同意{terms}和{privacy}。",
+      "terms": "服务条款",
+      "privacy": "隐私政策"
+    },
+    "resetPassword": {
+      "title": "重置密码",
+      "email": "邮箱",
+      "emailPlaceholder": "corybarker@email.com",
+      "submit": "重置密码"
+    }
+  }
+}

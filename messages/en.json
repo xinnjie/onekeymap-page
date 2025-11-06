@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "docs": "Docs",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "download": "Download"
+  },
+  "hero": {
+    "title": "Keymap Configure Once,<br />Use Everywhere.",
+    "subtitle": "Stop remapping shortcuts across editors. OneKeymap syncs your keybindings across VS Code, IntelliJ IDEA, Zed, and more.",
+    "cta": "Download for macOS",
+    "github": "View on GitHub"
+  },
+  "features": {
+    "sectionTitle": "Everything you need to unify your workflow",
+    "sectionSubtitle": "OneKeymap is packed with features to make your life easier.",
+    "editor": {
+      "title": "Unified Keymap Editor",
+      "description": "Manage all your keybindings in one intuitive interface. Record, edit, and organize shortcuts with zero friction."
+    },
+    "sync": {
+      "title": "Safe Sync with Diff Preview",
+      "description": "Preview every change before you write to disk. Unified diffs highlight adds, edits, and removals so nothing slips through."
+    },
+    "import": {
+      "title": "Seamless Import",
+      "description": "Bring existing shortcuts from VS Code, IntelliJ IDEA, Zed, and more into OneKeymap with a single click."
+    }
+  },
+  "footer": {
+    "madeBy": "Made by xinnjie",
+    "product": "Product",
+    "resources": "Resources",
+    "feedback": "Feedback",
+    "features": "Features",
+    "pricing": "Pricing & Plans",
+    "changelog": "Changelog",
+    "documentation": "Documentation",
+    "terms": "Terms of service",
+    "privacy": "Privacy policy",
+    "reportBug": "Report a bug",
+    "copyright": "© 2025 OneKeymap. All rights reserved."
+  },
+  "pricing": {
+    "title": "Pick the OneKeymap plan that suits you",
+    "subtitle": "OneKeymap is a native macOS app that keeps your shortcuts in sync.",
+    "recommended": "Recommended",
+    "monthly": {
+      "name": "Monthly",
+      "description": "Flexible access to OneKeymap with a subscription you can cancel anytime.",
+      "price": "$0.99",
+      "priceSuffix": "per month",
+      "feature1": "Sync shortcuts across every supported editor",
+      "feature2": "Monthly updates and new features",
+      "cta": "Start monthly plan"
+    },
+    "annually": {
+      "name": "Annually",
+      "description": "Best balance of value and flexibility, with priority access to new features.",
+      "price": "$3.99",
+      "priceSuffix": "per year",
+      "feature1": "Sync shortcuts across every supported editor",
+      "feature2": "1 year of updates and new features",
+      "cta": "Start annually plan"
+    },
+    "lifetime": {
+      "name": "Lifetime",
+      "description": "Own OneKeymap forever with a single payment and lock in future updates.",
+      "price": "$12.99",
+      "priceSuffix": "one-time",
+      "feature1": "Sync shortcuts across every supported editor",
+      "feature2": "Lifetime updates and new features",
+      "cta": "Get lifetime license"
+    }
+  },
+  "auth": {
+    "signin": {
+      "title": "Sign in to your account",
+      "email": "Email",
+      "emailPlaceholder": "corybarker@email.com",
+      "password": "Password",
+      "passwordPlaceholder": "••••••••",
+      "submit": "Sign In",
+      "forgotPassword": "Forgot password"
+    },
+    "signup": {
+      "title": "Create your account",
+      "fullName": "Full name",
+      "fullNamePlaceholder": "Corey Barker",
+      "email": "Email",
+      "emailPlaceholder": "corybarker@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "(+750) 932-8907",
+      "password": "Password",
+      "passwordPlaceholder": "••••••••",
+      "submit": "Register",
+      "or": "Or",
+      "continueGithub": "Continue with GitHub",
+      "agreementText": "By signing up, you agree to the {terms} and {privacy}.",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    },
+    "resetPassword": {
+      "title": "Reset password",
+      "email": "Email",
+      "emailPlaceholder": "corybarker@email.com",
+      "submit": "Reset Password"
+    }
+  }
+}

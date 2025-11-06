@@ -1,9 +1,13 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import NextLink from "next/link";
 import Logo from "./logo";
 import Image from "next/image";
 import DiscordLogo from "@/public/images/logo-discord.svg";
+import { getTranslations } from "next-intl/server";
 
-export default function Footer({ border = false }: { border?: boolean }) {
+export default async function Footer({ border = false }: { border?: boolean }) {
+  const t = await getTranslations("footer");
+
   return (
     <footer>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -16,19 +20,19 @@ export default function Footer({ border = false }: { border?: boolean }) {
             <div>
               <Logo />
             </div>
-            <div className="text-sm text-gray-600">Made by xinnjie</div>
+            <div className="text-sm text-gray-600">{t("madeBy")}</div>
           </div>
 
           {/* 2nd block */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium">Product</h3>
+            <h3 className="text-sm font-medium">{t("product")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
                   href="#features"
                 >
-                  Features
+                  {t("features")}
                 </Link>
               </li>
               <li>
@@ -36,7 +40,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   className="text-gray-600 transition hover:text-gray-900"
                   href="/pricing"
                 >
-                  Pricing & Plans
+                  {t("pricing")}
                 </Link>
               </li>
               <li>
@@ -44,7 +48,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   className="text-gray-600 transition hover:text-gray-900"
                   href="#0"
                 >
-                  Changelog
+                  {t("changelog")}
                 </Link>
               </li>
             </ul>
@@ -52,22 +56,22 @@ export default function Footer({ border = false }: { border?: boolean }) {
 
           {/* Resources block */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium">Resources</h3>
+            <h3 className="text-sm font-medium">{t("resources")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link
+                <NextLink
                   className="text-gray-600 transition hover:text-gray-900"
                   href="/docs"
                 >
-                  Documentation
-                </Link>
+                  {t("documentation")}
+                </NextLink>
               </li>
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
                   href="/terms"
                 >
-                  Terms of service
+                  {t("terms")}
                 </Link>
               </li>
               <li>
@@ -75,7 +79,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   className="text-gray-600 transition hover:text-gray-900"
                   href="/privacy"
                 >
-                  Privacy policy
+                  {t("privacy")}
                 </Link>
               </li>
               <li>
@@ -83,7 +87,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   className="text-gray-600 transition hover:text-gray-900"
                   href="https://github.com/xinnjie/onekeymap/issues/new"
                 >
-                  Report a bug
+                  {t("reportBug")}
                 </Link>
               </li>
             </ul>
@@ -91,7 +95,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
 
           {/* Feedback block */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium">Feedback</h3>
+            <h3 className="text-sm font-medium">{t("feedback")}</h3>
             <ul className="flex gap-1">
               <li>
                 <Link

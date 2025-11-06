@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "features": "Funktionen",
+    "docs": "Dokumentation",
+    "pricing": "Preise",
+    "blog": "Blog",
+    "download": "Herunterladen"
+  },
+  "hero": {
+    "title": "Einmal konfigurieren,<br />Überall verwenden",
+    "subtitle": "Hören Sie auf, Shortcuts zwischen Editoren neu zu konfigurieren. OneKeymap synchronisiert Ihre Tastenkombinationen zwischen VS Code, IntelliJ IDEA, Zed und mehr.",
+    "cta": "Für macOS herunterladen",
+    "github": "Auf GitHub ansehen"
+  },
+  "features": {
+    "sectionTitle": "Alles, was Sie zur Vereinheitlichung Ihres Workflows benötigen",
+    "sectionSubtitle": "OneKeymap ist vollgepackt mit Funktionen, die Ihnen das Leben erleichtern.",
+    "editor": {
+      "title": "Vereinheitlichter Keymap-Editor",
+      "description": "Verwalten Sie alle Ihre Tastenkombinationen in einer intuitiven Oberfläche. Zeichnen Sie Shortcuts auf, bearbeiten und organisieren Sie sie ohne Reibung."
+    },
+    "sync": {
+      "title": "Sichere Synchronisierung mit Diff-Vorschau",
+      "description": "Sehen Sie sich jede Änderung vor dem Schreiben auf die Festplatte an. Vereinheitlichte Diffs heben Hinzufügungen, Bearbeitungen und Entfernungen hervor, damit nichts durchrutscht."
+    },
+    "import": {
+      "title": "Nahtloser Import",
+      "description": "Importieren Sie vorhandene Shortcuts von VS Code, IntelliJ IDEA, Zed und mehr mit einem einzigen Klick in OneKeymap."
+    }
+  },
+  "footer": {
+    "madeBy": "Erstellt von xinnjie",
+    "product": "Produkt",
+    "resources": "Ressourcen",
+    "feedback": "Feedback",
+    "features": "Funktionen",
+    "pricing": "Preise & Pläne",
+    "changelog": "Änderungsprotokoll",
+    "documentation": "Dokumentation",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzerklärung",
+    "reportBug": "Fehler melden",
+    "copyright": "© 2025 OneKeymap. Alle Rechte vorbehalten."
+  },
+  "pricing": {
+    "title": "Wählen Sie den OneKeymap-Plan, der zu Ihnen passt",
+    "subtitle": "OneKeymap ist eine native macOS-App, die Ihre Shortcuts synchron hält.",
+    "recommended": "Empfohlen",
+    "monthly": {
+      "name": "Monatlich",
+      "description": "Flexibler Zugang zu OneKeymap mit einem Abonnement, das Sie jederzeit kündigen können.",
+      "price": "$0.99",
+      "priceSuffix": "pro Monat",
+      "feature1": "Synchronisieren Sie Shortcuts über alle unterstützten Editoren",
+      "feature2": "Monatliche Updates und neue Funktionen",
+      "cta": "Monatlichen Plan starten"
+    },
+    "annually": {
+      "name": "Jährlich",
+      "description": "Beste Balance zwischen Wert und Flexibilität, mit prioritärem Zugang zu neuen Funktionen.",
+      "price": "$3.99",
+      "priceSuffix": "pro Jahr",
+      "feature1": "Synchronisieren Sie Shortcuts über alle unterstützten Editoren",
+      "feature2": "1 Jahr Updates und neue Funktionen",
+      "cta": "Jährlichen Plan starten"
+    },
+    "lifetime": {
+      "name": "Lebenslang",
+      "description": "Besitzen Sie OneKeymap für immer mit einer einmaligen Zahlung und sichern Sie sich zukünftige Updates.",
+      "price": "$12.99",
+      "priceSuffix": "einmalig",
+      "feature1": "Synchronisieren Sie Shortcuts über alle unterstützten Editoren",
+      "feature2": "Lebenslange Updates und neue Funktionen",
+      "cta": "Lebenslange Lizenz erhalten"
+    }
+  },
+  "auth": {
+    "signin": {
+      "title": "Melden Sie sich bei Ihrem Konto an",
+      "email": "E-Mail",
+      "emailPlaceholder": "corybarker@email.com",
+      "password": "Passwort",
+      "passwordPlaceholder": "••••••••",
+      "submit": "Anmelden",
+      "forgotPassword": "Passwort vergessen"
+    },
+    "signup": {
+      "title": "Erstellen Sie Ihr Konto",
+      "fullName": "Vollständiger Name",
+      "fullNamePlaceholder": "Max Mustermann",
+      "email": "E-Mail",
+      "emailPlaceholder": "corybarker@email.com",
+      "phone": "Telefon",
+      "phonePlaceholder": "(+49) 176 12345678",
+      "password": "Passwort",
+      "passwordPlaceholder": "••••••••",
+      "submit": "Registrieren",
+      "or": "Oder",
+      "continueGithub": "Mit GitHub fortfahren",
+      "agreementText": "Durch die Registrierung stimmen Sie den {terms} und der {privacy} zu.",
+      "terms": "Nutzungsbedingungen",
+      "privacy": "Datenschutzerklärung"
+    },
+    "resetPassword": {
+      "title": "Passwort zurücksetzen",
+      "email": "E-Mail",
+      "emailPlaceholder": "corybarker@email.com",
+      "submit": "Passwort zurücksetzen"
+    }
+  }
+}

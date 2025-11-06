@@ -1,65 +1,12 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
-import { match as matchLocale } from "@formatjs/intl-localematcher";
-import Negotiator from "negotiator";
-import { locales, defaultLocale } from "./lib/i18n";
+import createMiddleware from "next-intl/middleware";
+import { routing } from "./i18n/routing";
 
-function getLocale(request: NextRequest): string {
-  // Get locale from Accept-Language header
-  const negotiatorHeaders: Record<string, string> = {};
-  request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
-
-  const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
-
-  try {
-    return matchLocale(
-      languages,
-      locales as unknown as string[],
-      defaultLocale,
-    );
-  } catch {
-    return defaultLocale;
-  }
-}
-
-export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
-
-  // Skip middleware for static files, API routes, and docs (Nextra has its own i18n)
-  if (
-    pathname.startsWith("/_next") ||
-    pathname.startsWith("/api") ||
-    pathname.startsWith("/static") ||
-    pathname.startsWith("/docs") ||
-    pathname.includes("/icon") ||
-    pathname.includes("/apple-icon") ||
-    pathname.includes("/og.png") ||
-    pathname.includes("/manifest.json") ||
-    pathname.includes("/robots.txt") ||
-    pathname.includes("/sitemap.xml") ||
-    /\.(.*)$/.test(pathname)
-  ) {
-    return NextResponse.next();
-  }
-
-  // Check if pathname already has a locale
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
-  );
-
-  if (pathnameHasLocale) {
-    return NextResponse.next();
-  }
-
-  // Redirect to locale-prefixed path
-  const locale = getLocale(request);
-  request.nextUrl.pathname = `/${locale}${pathname}`;
-  return NextResponse.redirect(request.nextUrl);
-}
+export default createMiddleware(routing);
 
 export const config = {
-  matcher: [
-    // Skip all internal paths (_next, api, static files, docs)
-    "/((?!_next|api|static|docs|.*\\..*|og\\.png|manifest\\.json|robots\\.txt|sitemap\\.xml).*)",
-  ],
+  // Match all pathnames except for
+  // - … if they start with `/api`, `/_next` or `/_vercel`
+  // - … the ones containing a dot (e.g. `favicon.ico`)
+  // - … docs (Nextra has its own i18n)
+  matcher: ["/((?!api|_next|_vercel|docs|.*\\..*).*)"],
 };

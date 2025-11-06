@@ -4,7 +4,9 @@ import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { locales, type Locale, seoConfig, localeHreflang } from "@/lib/i18n";
+import { getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
+import { locales, type Locale, seoConfig, localeHreflang } from "@/i18n/seo";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -131,6 +133,7 @@ export default async function LangLayout({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = (await params) as { lang: Locale };
+  const messages = await getMessages();
 
   return (
     <html lang={lang} className="scroll-smooth">
@@ -143,9 +146,11 @@ export default async function LangLayout({
       <body
         className={`${inter.variable} font-inter bg-gray-50 tracking-tight text-gray-900 antialiased`}
       >
-        <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
-          {children}
-        </div>
+        <NextIntlClientProvider locale={lang} messages={messages}>
+          <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
+            {children}
+          </div>
+        </NextIntlClientProvider>
         <SpeedInsights />
         <Analytics />
       </body>

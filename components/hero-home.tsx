@@ -3,8 +3,11 @@ import { APP_STORE_URL } from "@/constants";
 import PageIllustration from "@/components/page-illustration";
 import HeroScreenshot from "@/public/images/screenshot-hero.png";
 import OneKeymapLogo from "@/public/images/logo-onekeymap-liquid-60x60@3x.png";
+import { getTranslations } from "next-intl/server";
 
-export default function HeroHome() {
+export default async function HeroHome() {
+  const t = await getTranslations("hero");
+
   return (
     <section className="relative">
       <PageIllustration />
@@ -17,18 +20,15 @@ export default function HeroHome() {
               className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:text-6xl"
               data-aos="zoom-y-out"
               data-aos-delay={150}
-            >
-              Keymap Configure Once, <br className="max-lg:hidden" />
-              Use Everywhere.
-            </h1>
+              dangerouslySetInnerHTML={{ __html: t("title") }}
+            />
             <div className="mx-auto max-w-3xl">
               <p
                 className="mb-8 text-lg text-gray-700"
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Stop remapping shortcuts across editors. OneKeymap syncs your
-                keybindings across VS Code, IntelliJ IDEA, Zed, and more.
+                {t("subtitle")}
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
@@ -47,13 +47,13 @@ export default function HeroHome() {
                       height={24}
                       alt="OneKeymap logo"
                     />
-                    <span>Download for macOS</span>
+                    <span>{t("cta")}</span>
                   </a>
                   <a
                     className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto"
                     href="https://github.com/xinnjie/onekeymap-cli"
                   >
-                    View on GitHub
+                    {t("github")}
                   </a>
                 </div>
               </div>

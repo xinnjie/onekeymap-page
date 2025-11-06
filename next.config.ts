@@ -1,11 +1,14 @@
-const nextra = require("nextra");
+import nextra from "nextra";
+import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
 
-const withNextra = (nextra.default || nextra)({
+const withNextra = nextra({
   contentDirBasePath: "/docs",
 });
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
+
+const nextConfig: NextConfig = {
   // Enable compression for better performance
   compress: true,
 
@@ -46,4 +49,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withNextra(nextConfig);
+export default withNextIntl(withNextra(nextConfig));

@@ -1,28 +1,13 @@
-import "server-only";
+// Simplified i18n configuration
+// Core locale management is now handled by next-intl (see i18n/routing.ts)
+// This file only contains SEO and metadata configuration
 
-export const defaultLocale = "en" as const;
-export const locales = ["en", "zh", "ja", "ko", "fr", "de", "es"] as const;
+import { routing } from "@/i18n/routing";
+
+// Re-export locales from next-intl routing configuration
+export const locales = routing.locales;
+export const defaultLocale = routing.defaultLocale;
 export type Locale = (typeof locales)[number];
-
-export const localeNames: Record<Locale, string> = {
-  en: "English",
-  zh: "简体中文",
-  ja: "日本語",
-  ko: "한국어",
-  fr: "Français",
-  de: "Deutsch",
-  es: "Español",
-};
-
-export const localeFlags: Record<Locale, string> = {
-  en: "🇺🇸",
-  zh: "🇨🇳",
-  ja: "🇯🇵",
-  ko: "🇰🇷",
-  fr: "🇫🇷",
-  de: "🇩🇪",
-  es: "🇪🇸",
-};
 
 export const localeHreflang: Record<Locale, string> = {
   en: "en-US",
@@ -177,120 +162,3 @@ export const seoConfig: Record<
     ],
   },
 };
-
-// Dictionary type definition
-export type Dictionary = {
-  nav: {
-    home: string;
-    pricing: string;
-    blog: string;
-    download: string;
-  };
-  hero: {
-    title: string;
-    subtitle: string;
-    cta: string;
-  };
-  features: {
-    title: string;
-  };
-  footer: {
-    copyright: string;
-  };
-};
-
-// Dictionary loader
-const dictionaries = {
-  en: () => import("./dictionaries/en.json").then((module) => module.default),
-  zh: () => import("./dictionaries/zh.json").then((module) => module.default),
-  ja: () => import("./dictionaries/ja.json").then((module) => module.default),
-  ko: () => import("./dictionaries/ko.json").then((module) => module.default),
-  fr: () => import("./dictionaries/fr.json").then((module) => module.default),
-  de: () => import("./dictionaries/de.json").then((module) => module.default),
-  es: () => import("./dictionaries/es.json").then((module) => module.default),
-} as const;
-
-export const getDictionary = async (locale: Locale): Promise<Dictionary> => {
-  return dictionaries[locale]() as Promise<Dictionary>;
-};
-
-// Utility functions
-
-export function isValidLocale(locale: string): locale is Locale {
-  return locales.includes(locale as Locale);
-}
-
-export function getLocaleFromUrl(url: string): Locale {
-  const segments = url.split("/").filter(Boolean);
-  const potentialLocale = segments[0];
-
-  if (isValidLocale(potentialLocale)) {
-    return potentialLocale;
-  }
-
-  return defaultLocale;
-}
-
-export function removeLocaleFromUrl(url: string, locale: Locale): string {
-  if (locale === defaultLocale) return url;
-  return url.replace(new RegExp(`^/${locale}`), "") || "/";
-}
-
-export function addLocaleToUrl(url: string, locale: Locale): string {
-  if (locale === defaultLocale) return url;
-  return `/${locale}${url === "/" ? "" : url}`;
-}
-
-// SEO helpers
-export function generateHreflangLinks(
-  currentPath: string,
-  currentLocale: Locale,
-) {
-  return locales.map((locale) => ({
-    rel: "alternate",
-    hreflang: localeHreflang[locale],
-    href: `${process.env.NEXT_PUBLIC_SITE_URL || "https://onekeymap.com"}${addLocaleToUrl(currentPath, locale)}`,
-  }));
-}
-
-export function generateLocaleMetadata(locale: Locale) {
-  const config = seoConfig[locale];
-  return {
-    title: config.title,
-    description: config.description,
-    keywords: config.keywords,
-    openGraph: {
-      title: config.title,
-      description: config.description,
-      locale: localeHreflang[locale].replace("-", "_"),
-    },
-    twitter: {
-      title: config.title,
-      description: config.description,
-    },
-  };
-}
-
-// Language detection
-export function detectBrowserLanguage(): Locale {
-  if (typeof window === "undefined") return defaultLocale;
-
-  const browserLang = navigator.language.toLowerCase();
-
-  // Check for exact matches first
-  for (const locale of locales) {
-    if (browserLang === localeHreflang[locale].toLowerCase()) {
-      return locale;
-    }
-  }
-
-  // Check for partial matches (language code only)
-  const langCode = browserLang.split("-")[0];
-  for (const locale of locales) {
-    if (langCode === localeHreflang[locale].toLowerCase().split("-")[0]) {
-      return locale;
-    }
-  }
-
-  return defaultLocale;
-}

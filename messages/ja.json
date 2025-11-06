@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "features": "機能",
+    "docs": "ドキュメント",
+    "pricing": "価格",
+    "blog": "ブログ",
+    "download": "ダウンロード"
+  },
+  "hero": {
+    "title": "一度設定すれば、<br />どこでも使用可能",
+    "subtitle": "エディター間でショートカットを再設定する必要はありません。OneKeymapがVS Code、IntelliJ IDEA、Zedなどでキーバインドを同期します。",
+    "cta": "macOS版をダウンロード",
+    "github": "GitHubで見る"
+  },
+  "features": {
+    "sectionTitle": "ワークフローを統一するために必要なすべて",
+    "sectionSubtitle": "OneKeymapには、作業を簡単にする機能が満載です。",
+    "editor": {
+      "title": "統一キーマップエディター",
+      "description": "直感的なインターフェースですべてのキーバインドを管理。摩擦なくショートカットを記録、編集、整理できます。"
+    },
+    "sync": {
+      "title": "差分プレビュー付き安全同期",
+      "description": "ディスクに書き込む前にすべての変更をプレビュー。統一差分が追加、編集、削除を強調表示し、何も見逃しません。"
+    },
+    "import": {
+      "title": "シームレスなインポート",
+      "description": "VS Code、IntelliJ IDEA、Zedなどの既存のショートカットをワンクリックでOneKeymapにインポートできます。"
+    }
+  },
+  "footer": {
+    "madeBy": "xinnjieによって作成",
+    "product": "製品",
+    "resources": "リソース",
+    "feedback": "フィードバック",
+    "features": "機能",
+    "pricing": "価格とプラン",
+    "changelog": "変更履歴",
+    "documentation": "ドキュメント",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "reportBug": "バグを報告",
+    "copyright": "© 2025 OneKeymap。全著作権所有。"
+  },
+  "pricing": {
+    "title": "あなたに合ったOneKeymapプランを選択",
+    "subtitle": "OneKeymapは、ショートカットを同期し続けるネイティブmacOSアプリです。",
+    "recommended": "おすすめ",
+    "monthly": {
+      "name": "月額",
+      "description": "いつでもキャンセル可能なサブスクリプションで柔軟にOneKeymapにアクセスできます。",
+      "price": "$0.99",
+      "priceSuffix": "月額",
+      "feature1": "サポートされているすべてのエディター間でショートカットを同期",
+      "feature2": "毎月のアップデートと新機能",
+      "cta": "月額プランを開始"
+    },
+    "annually": {
+      "name": "年額",
+      "description": "価値と柔軟性の最高のバランス、新機能への優先アクセス。",
+      "price": "$3.99",
+      "priceSuffix": "年額",
+      "feature1": "サポートされているすべてのエディター間でショートカットを同期",
+      "feature2": "1年間のアップデートと新機能",
+      "cta": "年額プランを開始"
+    },
+    "lifetime": {
+      "name": "ライフタイム",
+      "description": "一度の支払いで永久にOneKeymapを所有し、将来のアップデートをロックインできます。",
+      "price": "$12.99",
+      "priceSuffix": "買い切り",
+      "feature1": "サポートされているすべてのエディター間でショートカットを同期",
+      "feature2": "ライフタイムアップデートと新機能",
+      "cta": "ライフタイムライセンスを取得"
+    }
+  },
+  "auth": {
+    "signin": {
+      "title": "アカウントにサインイン",
+      "email": "メールアドレス",
+      "emailPlaceholder": "corybarker@email.com",
+      "password": "パスワード",
+      "passwordPlaceholder": "••••••••",
+      "submit": "サインイン",
+      "forgotPassword": "パスワードを忘れた"
+    },
+    "signup": {
+      "title": "アカウントを作成",
+      "fullName": "フルネーム",
+      "fullNamePlaceholder": "山田太郎",
+      "email": "メールアドレス",
+      "emailPlaceholder": "corybarker@email.com",
+      "phone": "電話番号",
+      "phonePlaceholder": "(+81) 90-0000-0000",
+      "password": "パスワード",
+      "passwordPlaceholder": "••••••••",
+      "submit": "登録",
+      "or": "または",
+      "continueGithub": "GitHubで続ける",
+      "agreementText": "登録することで、{terms}と{privacy}に同意したことになります。",
+      "terms": "利用規約",
+      "privacy": "プライバシーポリシー"
+    },
+    "resetPassword": {
+      "title": "パスワードをリセット",
+      "email": "メールアドレス",
+      "emailPlaceholder": "corybarker@email.com",
+      "submit": "パスワードをリセット"
+    }
+  }
+}

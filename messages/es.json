@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "features": "Características",
+    "docs": "Documentación",
+    "pricing": "Precios",
+    "blog": "Blog",
+    "download": "Descargar"
+  },
+  "hero": {
+    "title": "Configura una vez,<br />Usa en todas partes",
+    "subtitle": "Deja de reconfigurar atajos entre editores. OneKeymap sincroniza tus combinaciones de teclas entre VS Code, IntelliJ IDEA, Zed y más.",
+    "cta": "Descargar para macOS",
+    "github": "Ver en GitHub"
+  },
+  "features": {
+    "sectionTitle": "Todo lo que necesitas para unificar tu flujo de trabajo",
+    "sectionSubtitle": "OneKeymap está repleto de funciones para facilitar tu trabajo.",
+    "editor": {
+      "title": "Editor de Keymap unificado",
+      "description": "Gestiona todos tus atajos en una interfaz intuitiva. Graba, edita y organiza atajos sin fricción."
+    },
+    "sync": {
+      "title": "Sincronización segura con vista previa de diferencias",
+      "description": "Previsualiza cada cambio antes de escribir en el disco. Las diferencias unificadas resaltan añadidos, ediciones y eliminaciones para que nada pase desapercibido."
+    },
+    "import": {
+      "title": "Importación sin problemas",
+      "description": "Importa atajos existentes de VS Code, IntelliJ IDEA, Zed y más a OneKeymap con un solo clic."
+    }
+  },
+  "footer": {
+    "madeBy": "Hecho por xinnjie",
+    "product": "Producto",
+    "resources": "Recursos",
+    "feedback": "Comentarios",
+    "features": "Características",
+    "pricing": "Precios y planes",
+    "changelog": "Registro de cambios",
+    "documentation": "Documentación",
+    "terms": "Términos de servicio",
+    "privacy": "Política de privacidad",
+    "reportBug": "Informar un error",
+    "copyright": "© 2025 OneKeymap. Todos los derechos reservados."
+  },
+  "pricing": {
+    "title": "Elige el plan de OneKeymap que se adapta a ti",
+    "subtitle": "OneKeymap es una aplicación nativa de macOS que mantiene tus atajos sincronizados.",
+    "recommended": "Recomendado",
+    "monthly": {
+      "name": "Mensual",
+      "description": "Acceso flexible a OneKeymap con una suscripción que puedes cancelar en cualquier momento.",
+      "price": "$0.99",
+      "priceSuffix": "por mes",
+      "feature1": "Sincroniza atajos en todos los editores compatibles",
+      "feature2": "Actualizaciones mensuales y nuevas funciones",
+      "cta": "Iniciar plan mensual"
+    },
+    "annually": {
+      "name": "Anual",
+      "description": "Mejor equilibrio entre valor y flexibilidad, con acceso prioritario a nuevas funciones.",
+      "price": "$3.99",
+      "priceSuffix": "por año",
+      "feature1": "Sincroniza atajos en todos los editores compatibles",
+      "feature2": "1 año de actualizaciones y nuevas funciones",
+      "cta": "Iniciar plan anual"
+    },
+    "lifetime": {
+      "name": "De por vida",
+      "description": "Posee OneKeymap para siempre con un pago único y asegura futuras actualizaciones.",
+      "price": "$12.99",
+      "priceSuffix": "pago único",
+      "feature1": "Sincroniza atajos en todos los editores compatibles",
+      "feature2": "Actualizaciones de por vida y nuevas funciones",
+      "cta": "Obtener licencia de por vida"
+    }
+  },
+  "auth": {
+    "signin": {
+      "title": "Inicia sesión en tu cuenta",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "corybarker@email.com",
+      "password": "Contraseña",
+      "passwordPlaceholder": "••••••••",
+      "submit": "Iniciar sesión",
+      "forgotPassword": "¿Olvidaste tu contraseña?"
+    },
+    "signup": {
+      "title": "Crea tu cuenta",
+      "fullName": "Nombre completo",
+      "fullNamePlaceholder": "Juan Pérez",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "corybarker@email.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "(+34) 612 34 56 78",
+      "password": "Contraseña",
+      "passwordPlaceholder": "••••••••",
+      "submit": "Registrarse",
+      "or": "O",
+      "continueGithub": "Continuar con GitHub",
+      "agreementText": "Al registrarte, aceptas los {terms} y la {privacy}.",
+      "terms": "Términos de servicio",
+      "privacy": "Política de privacidad"
+    },
+    "resetPassword": {
+      "title": "Restablecer contraseña",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "corybarker@email.com",
+      "submit": "Restablecer contraseña"
+    }
+  }
+}

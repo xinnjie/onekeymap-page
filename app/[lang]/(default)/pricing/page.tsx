@@ -1,4 +1,5 @@
 import { APP_STORE_URL } from "@/constants";
+import { getTranslations } from "next-intl/server";
 
 export const metadata = {
   title: "OneKeymap Pricing",
@@ -84,46 +85,45 @@ function PricingCard({
   );
 }
 
-export default function PricingPage() {
+export default async function PricingPage() {
+  const t = await getTranslations("pricing");
+
   const plans: PricingCardProps[] = [
     {
-      name: "Monthly",
-      description:
-        "Flexible access to OneKeymap with a subscription you can cancel anytime.",
-      price: "$0.99",
-      priceSuffix: "per month",
+      name: t("monthly.name"),
+      description: t("monthly.description"),
+      price: t("monthly.price"),
+      priceSuffix: t("monthly.priceSuffix"),
       features: [
-        { text: "Sync shortcuts across every supported editor" },
-        { text: "Monthly updates and new features" },
+        { text: t("monthly.feature1") },
+        { text: t("monthly.feature2") },
       ],
-      ctaLabel: "Start monthly plan",
+      ctaLabel: t("monthly.cta"),
       ctaHref: APP_STORE_URL,
     },
     {
-      name: "Annually",
-      description:
-        "Best balance of value and flexibility, with priority access to new features.",
-      price: "$3.99",
-      priceSuffix: "per year",
+      name: t("annually.name"),
+      description: t("annually.description"),
+      price: t("annually.price"),
+      priceSuffix: t("annually.priceSuffix"),
       features: [
-        { text: "Sync shortcuts across every supported editor" },
-        { text: "1 year of updates and new features" },
+        { text: t("annually.feature1") },
+        { text: t("annually.feature2") },
       ],
-      ctaLabel: "Start annually plan",
+      ctaLabel: t("annually.cta"),
       ctaHref: APP_STORE_URL,
       recommanded: true,
     },
     {
-      name: "Lifetime",
-      description:
-        "Own OneKeymap forever with a single payment and lock in future updates.",
-      price: "$12.99",
-      priceSuffix: "one-time",
+      name: t("lifetime.name"),
+      description: t("lifetime.description"),
+      price: t("lifetime.price"),
+      priceSuffix: t("lifetime.priceSuffix"),
       features: [
-        { text: "Sync shortcuts across every supported editor" },
-        { text: "Lifetime updates and new features" },
+        { text: t("lifetime.feature1") },
+        { text: t("lifetime.feature2") },
       ],
-      ctaLabel: "Get lifetime license",
+      ctaLabel: t("lifetime.cta"),
       ctaHref: APP_STORE_URL,
     },
   ];
@@ -132,11 +132,9 @@ export default function PricingPage() {
     <main className="mx-auto max-w-6xl px-4 pt-32 pb-20 sm:px-6 lg:px-8">
       <div className="text-center">
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-          Pick the OneKeymap plan that suits you
+          {t("title")}
         </h1>
-        <p className="mt-4 text-lg text-gray-600">
-          OneKeymap is a native macOS app that keeps your shortcuts in sync.
-        </p>
+        <p className="mt-4 text-lg text-gray-600">{t("subtitle")}</p>
       </div>
 
       <div className="mt-16 grid grid-cols-1 items-start gap-10 md:grid-cols-3">
@@ -147,7 +145,7 @@ export default function PricingPage() {
               {isRecommended && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 transform">
                   <div className="inline-flex items-center gap-2 rounded-full bg-blue-200 px-4 py-1 text-sm font-semibold text-gray-900 shadow-sm">
-                    Recommended
+                    {t("recommended")}
                   </div>
                 </div>
               )}

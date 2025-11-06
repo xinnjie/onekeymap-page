@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "docs": "Documentation",
+    "pricing": "Tarifs",
+    "blog": "Blog",
+    "download": "Télécharger"
+  },
+  "hero": {
+    "title": "Configurez une fois,<br />Utilisez partout",
+    "subtitle": "Arrêtez de reconfigurer les raccourcis entre les éditeurs. OneKeymap synchronise vos raccourcis clavier entre VS Code, IntelliJ IDEA, Zed et plus.",
+    "cta": "Télécharger pour macOS",
+    "github": "Voir sur GitHub"
+  },
+  "features": {
+    "sectionTitle": "Tout ce dont vous avez besoin pour unifier votre workflow",
+    "sectionSubtitle": "OneKeymap est doté de fonctionnalités pour faciliter votre travail.",
+    "editor": {
+      "title": "Éditeur de Keymap unifié",
+      "description": "Gérez tous vos raccourcis dans une interface intuitive. Enregistrez, modifiez et organisez les raccourcis sans friction."
+    },
+    "sync": {
+      "title": "Synchronisation sécurisée avec aperçu des différences",
+      "description": "Prévisualisez chaque modification avant d'écrire sur le disque. Les différences unifiées mettent en évidence les ajouts, modifications et suppressions pour ne rien manquer."
+    },
+    "import": {
+      "title": "Importation transparente",
+      "description": "Importez les raccourcis existants de VS Code, IntelliJ IDEA, Zed et plus dans OneKeymap en un seul clic."
+    }
+  },
+  "footer": {
+    "madeBy": "Créé par xinnjie",
+    "product": "Produit",
+    "resources": "Ressources",
+    "feedback": "Retours",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs et plans",
+    "changelog": "Journal des modifications",
+    "documentation": "Documentation",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialité",
+    "reportBug": "Signaler un bug",
+    "copyright": "© 2025 OneKeymap. Tous droits réservés."
+  },
+  "pricing": {
+    "title": "Choisissez le plan OneKeymap qui vous convient",
+    "subtitle": "OneKeymap est une application native macOS qui garde vos raccourcis synchronisés.",
+    "recommended": "Recommandé",
+    "monthly": {
+      "name": "Mensuel",
+      "description": "Accès flexible à OneKeymap avec un abonnement que vous pouvez annuler à tout moment.",
+      "price": "$0.99",
+      "priceSuffix": "par mois",
+      "feature1": "Synchronisez les raccourcis sur tous les éditeurs pris en charge",
+      "feature2": "Mises à jour mensuelles et nouvelles fonctionnalités",
+      "cta": "Démarrer le plan mensuel"
+    },
+    "annually": {
+      "name": "Annuel",
+      "description": "Meilleur équilibre entre valeur et flexibilité, avec un accès prioritaire aux nouvelles fonctionnalités.",
+      "price": "$3.99",
+      "priceSuffix": "par an",
+      "feature1": "Synchronisez les raccourcis sur tous les éditeurs pris en charge",
+      "feature2": "1 an de mises à jour et nouvelles fonctionnalités",
+      "cta": "Démarrer le plan annuel"
+    },
+    "lifetime": {
+      "name": "À vie",
+      "description": "Possédez OneKeymap pour toujours avec un paiement unique et verrouillez les mises à jour futures.",
+      "price": "$12.99",
+      "priceSuffix": "paiement unique",
+      "feature1": "Synchronisez les raccourcis sur tous les éditeurs pris en charge",
+      "feature2": "Mises à jour à vie et nouvelles fonctionnalités",
+      "cta": "Obtenir la licence à vie"
+    }
+  },
+  "auth": {
+    "signin": {
+      "title": "Connectez-vous à votre compte",
+      "email": "E-mail",
+      "emailPlaceholder": "corybarker@email.com",
+      "password": "Mot de passe",
+      "passwordPlaceholder": "••••••••",
+      "submit": "Se connecter",
+      "forgotPassword": "Mot de passe oublié"
+    },
+    "signup": {
+      "title": "Créez votre compte",
+      "fullName": "Nom complet",
+      "fullNamePlaceholder": "Jean Dupont",
+      "email": "E-mail",
+      "emailPlaceholder": "corybarker@email.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "(+33) 6 12 34 56 78",
+      "password": "Mot de passe",
+      "passwordPlaceholder": "••••••••",
+      "submit": "S'inscrire",
+      "or": "Ou",
+      "continueGithub": "Continuer avec GitHub",
+      "agreementText": "En vous inscrivant, vous acceptez les {terms} et la {privacy}.",
+      "terms": "Conditions d'utilisation",
+      "privacy": "Politique de confidentialité"
+    },
+    "resetPassword": {
+      "title": "Réinitialiser le mot de passe",
+      "email": "E-mail",
+      "emailPlaceholder": "corybarker@email.com",
+      "submit": "Réinitialiser le mot de passe"
+    }
+  }
+}

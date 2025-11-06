@@ -1,14 +1,12 @@
-"use client";
-
-import Link from "next/link";
-import Image from "next/image";
+import { Link } from "@/i18n/routing";
+import NextLink from "next/link";
 import { APP_STORE_URL } from "@/constants";
 import Logo from "./logo";
-import DiscordLogo from "@/public/images/logo-discord.svg";
-import { useState } from "react";
+import MobileMenu from "./mobile-menu";
+import { getTranslations } from "next-intl/server";
 
-export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+export default async function Header() {
+  const t = await getTranslations("nav");
 
   return (
     <header className="fixed top-2 z-30 w-full md:top-6">
@@ -27,23 +25,23 @@ export default function Header() {
                   href="/#features"
                   className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
                 >
-                  Features
+                  {t("features")}
                 </Link>
               </li>
               <li>
-                <Link
+                <NextLink
                   href="/docs"
                   className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
                 >
-                  Docs
-                </Link>
+                  {t("docs")}
+                </NextLink>
               </li>
               <li>
                 <Link
                   href="/pricing"
                   className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
                 >
-                  Pricing
+                  {t("pricing")}
                 </Link>
               </li>
               <li>
@@ -51,97 +49,22 @@ export default function Header() {
                   href={APP_STORE_URL}
                   className="btn-sm ml-4 bg-blue-500 text-white shadow-sm hover:bg-blue-600"
                 >
-                  Download
+                  {t("download")}
                 </Link>
               </li>
             </ul>
           </nav>
 
           {/* Mobile navigation */}
-          <div className="flex items-center gap-2 md:hidden">
-            {/* Download button */}
-            <Link
-              href={APP_STORE_URL}
-              className="btn-sm bg-blue-500 text-white shadow-sm hover:bg-blue-600"
-            >
-              Download
-            </Link>
-
-            {/* Hamburger menu button */}
-            <button
-              className="flex h-8 w-8 items-center justify-center text-gray-600 hover:text-gray-900"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                {mobileMenuOpen ? (
-                  <path d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
-          </div>
+          <MobileMenu
+            translations={{
+              features: t("features"),
+              docs: t("docs"),
+              pricing: t("pricing"),
+              download: t("download"),
+            }}
+          />
         </div>
-
-        {/* Mobile dropdown menu */}
-        {mobileMenuOpen && (
-          <div className="mt-2 rounded-2xl bg-white/90 shadow-lg backdrop-blur-xs md:hidden">
-            <nav className="px-4 py-2">
-              <ul className="space-y-1">
-                <li>
-                  <Link
-                    href="/#features"
-                    className="block px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/docs"
-                    className="block px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Docs
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/pricing"
-                    className="block px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Pricing
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://discord.gg/fW3TWuXj9A"
-                    className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    <Image
-                      src={DiscordLogo}
-                      alt="Discord logo"
-                      className="h-4 w-4"
-                    />
-                    <span>Contact us</span>
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        )}
       </div>
     </header>
   );
