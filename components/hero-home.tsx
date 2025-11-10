@@ -18,24 +18,12 @@ export default async function HeroHome() {
           <div className="pb-12 text-center md:pb-16">
             <h1
               className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:text-6xl"
-              data-aos="zoom-y-out"
-              data-aos-delay={150}
               dangerouslySetInnerHTML={{ __html: t("title") }}
             />
             <div className="mx-auto max-w-3xl">
-              <p
-                className="mb-8 text-lg text-gray-700"
-                data-aos="zoom-y-out"
-                data-aos-delay={300}
-              >
-                {t("subtitle")}
-              </p>
+              <p className="mb-8 text-lg text-gray-700">{t("subtitle")}</p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
-                <div
-                  className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center"
-                  data-aos="zoom-y-out"
-                  data-aos-delay={450}
-                >
+                <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
                   <a
                     className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
                     href={APP_STORE_URL}
@@ -45,7 +33,7 @@ export default async function HeroHome() {
                       src={OneKeymapLogo}
                       width={24}
                       height={24}
-                      alt="OneKeymap logo"
+                      alt="OneKeymap.app logo"
                     />
                     <span>{t("cta")}</span>
                   </a>
@@ -60,15 +48,11 @@ export default async function HeroHome() {
             </div>
           </div>
           {/* Hero image */}
-          <div
-            className="mx-auto max-w-3xl"
-            data-aos="zoom-y-out"
-            data-aos-delay={600}
-          >
+          <div className="mx-auto max-w-3xl">
             <div className="relative overflow-hidden rounded-2xl bg-gray-900 shadow-xl">
               <Image
                 src={HeroScreenshot}
-                alt="OneKeymap macOS app showcasing unified keymap editor"
+                alt="OneKeymap.app macOS app showcasing unified keymap editor"
                 className="h-full w-full object-cover"
                 priority
               />

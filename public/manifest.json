@@ -1,6 +1,6 @@
 {
-  "name": "OneKeymap - Keymap Configure once. Use everywhere.",
-  "short_name": "OneKeymap",
+  "name": "OneKeymap.app - Keymap Configure once. Use everywhere.",
+  "short_name": "OneKeymap.app",
   "description": "Unify your editor shortcuts across VS Code, Zed, IntelliJ IDEA, and Helix. Sync keybindings, boost productivity, and eliminate context switching between code editors.",
   "start_url": "/",
   "display": "standalone",
@@ -35,14 +35,14 @@
       "sizes": "1200x800",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "OneKeymap main interface"
+      "label": "OneKeymap.app main interface"
     }
   ],
   "shortcuts": [
     {
       "name": "Download for macOS",
       "short_name": "Download",
-      "description": "Get OneKeymap from the Mac App Store",
+      "description": "Get OneKeymap.app from the Mac App Store",
       "url": "/",
       "icons": [
         {

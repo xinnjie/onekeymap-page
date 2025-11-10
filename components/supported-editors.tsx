@@ -15,56 +15,30 @@ export default function SupportedEditors() {
             <h2 className="text-3xl font-bold">
               Works With Your Favorite Editors
             </h2>
-            <p
-              className="mb-8 text-lg text-gray-700"
-              data-aos="zoom-y-out"
-              data-aos-delay={300}
-            >
+            <p className="mb-8 text-lg text-gray-700">
               Your muscle memory, uninterrupted.
             </p>
           </div>
 
           {/* Items */}
-          <div
-            className="grid grid-cols-2 gap-4 md:grid-cols-4"
-            data-aos-id-featbl
-          >
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             {/* VS Code */}
-            <div
-              className="flex items-center justify-center rounded-xl bg-gray-100 p-4"
-              data-aos="fade-up"
-              data-aos-anchor="[data-aos-id-featbl]"
-            >
+            <div className="flex items-center justify-center rounded-xl bg-gray-100 p-4">
               <Image src={LogoVscode} alt="VS Code logo" width={150} />
             </div>
 
             {/* IntelliJ */}
-            <div
-              className="flex items-center justify-center rounded-xl bg-gray-100 p-4"
-              data-aos="fade-up"
-              data-aos-anchor="[data-aos-id-featbl]"
-              data-aos-delay="100"
-            >
+            <div className="flex items-center justify-center rounded-xl bg-gray-100 p-4">
               <Image src={LogoIntellij} alt="IntelliJ IDEA logo" width={150} />
             </div>
 
             {/* Zed */}
-            <div
-              className="flex items-center justify-center rounded-xl bg-gray-100 p-4"
-              data-aos="fade-up"
-              data-aos-anchor="[data-aos-id-featbl]"
-              data-aos-delay="200"
-            >
+            <div className="flex items-center justify-center rounded-xl bg-gray-100 p-4">
               <Image src={LogoZed} alt="Zed logo" width={150} />
             </div>
 
             {/* Helix */}
-            <div
-              className="flex items-center justify-center rounded-xl bg-gray-100 p-4"
-              data-aos="fade-up"
-              data-aos-anchor="[data-aos-id-featbl]"
-              data-aos-delay="300"
-            >
+            <div className="flex items-center justify-center rounded-xl bg-gray-100 p-4">
               <Image src={LogoHelix} alt="Helix logo" width={150} />
             </div>
           </div>

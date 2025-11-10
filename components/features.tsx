@@ -24,7 +24,7 @@ export default async function Features() {
               <div className="relative aspect-[16/10] bg-gray-900">
                 <Image
                   src={EditorScreenshot}
-                  alt="OneKeymap keymap editor screenshot"
+                  alt="OneKeymap.app keymap editor screenshot"
                   fill
                   className="object-cover"
                   sizes="(min-width: 1024px) 960px, 100vw"
@@ -48,7 +48,7 @@ export default async function Features() {
               <div className="relative aspect-[16/10] bg-gray-900">
                 <Image
                   src={SyncScreenshot}
-                  alt="OneKeymap sync diff preview screenshot"
+                  alt="OneKeymap.app sync diff preview screenshot"
                   fill
                   className="object-cover"
                   sizes="(min-width: 1024px) 960px, 100vw"
@@ -71,7 +71,7 @@ export default async function Features() {
               <div className="relative aspect-[16/10] bg-gray-900">
                 <Image
                   src={ImportScreenshot}
-                  alt="OneKeymap import workflow screenshot"
+                  alt="OneKeymap.app import workflow screenshot"
                   fill
                   className="object-cover"
                   sizes="(min-width: 1024px) 960px, 100vw"

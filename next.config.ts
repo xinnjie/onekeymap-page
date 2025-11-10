@@ -12,25 +12,6 @@ const nextConfig: NextConfig = {
   // Enable compression for better performance
   compress: true,
 
-  // Trailing slash for consistent URLs
-  trailingSlash: true,
-
-  // Redirects for SEO
-  async redirects() {
-    return [
-      {
-        source: "/home",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/download",
-        destination: "https://apps.apple.com/app/onekeymap/id6752988933?mt=12",
-        permanent: false,
-      },
-    ];
-  },
-
   // Enable experimental features for better performance
   experimental: {
     optimizeCss: true,

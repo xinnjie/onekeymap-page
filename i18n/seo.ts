@@ -29,7 +29,7 @@ export const seoConfig: Record<
   }
 > = {
   en: {
-    title: "OneKeymap — Keymap Configure once. Use everywhere.",
+    title: "OneKeymap.app — Keymap Configure once. Use everywhere.",
     description:
       "Unify your editor shortcuts across VS Code, Zed, IntelliJ IDEA, and Helix. Sync keybindings, boost productivity, and eliminate context switching between code editors.",
     keywords: [
@@ -48,7 +48,7 @@ export const seoConfig: Record<
     ],
   },
   zh: {
-    title: "OneKeymap — 一次配置，随处使用",
+    title: "OneKeymap.app — 一次配置，随处使用",
     description:
       "在 VS Code、Zed、IntelliJ IDEA 和 Helix 之间统一你的编辑器快捷键。同步键位绑定，提升生产力，消除代码编辑器之间的上下文切换。",
     keywords: [
@@ -67,7 +67,7 @@ export const seoConfig: Record<
     ],
   },
   ja: {
-    title: "OneKeymap — 一度設定すれば、どこでも使用可能",
+    title: "OneKeymap.app — 一度設定すれば、どこでも使用可能",
     description:
       "VS Code、Zed、IntelliJ IDEA、Helixでエディターのショートカットを統一。キーバインドを同期し、生産性を向上させ、コードエディター間のコンテキストスイッチングを排除。",
     keywords: [
@@ -86,7 +86,7 @@ export const seoConfig: Record<
     ],
   },
   ko: {
-    title: "OneKeymap — 한 번 설정하면 모든 곳에서 사용",
+    title: "OneKeymap.app — 한 번 설정하면 모든 곳에서 사용",
     description:
       "VS Code, Zed, IntelliJ IDEA, Helix에서 에디터 단축키를 통합하세요. 키 바인딩을 동기화하고 생산성을 높이며 코드 에디터 간 컨텍스트 전환을 제거하세요.",
     keywords: [
@@ -105,7 +105,7 @@ export const seoConfig: Record<
     ],
   },
   fr: {
-    title: "OneKeymap — Configurez une fois, utilisez partout",
+    title: "OneKeymap.app — Configurez une fois, utilisez partout",
     description:
       "Unifiez vos raccourcis d'éditeur entre VS Code, Zed, IntelliJ IDEA et Helix. Synchronisez les raccourcis clavier, boostez la productivité et éliminez le changement de contexte entre les éditeurs de code.",
     keywords: [
@@ -124,7 +124,7 @@ export const seoConfig: Record<
     ],
   },
   de: {
-    title: "OneKeymap — Einmal konfigurieren, überall verwenden",
+    title: "OneKeymap.app — Einmal konfigurieren, überall verwenden",
     description:
       "Vereinheitlichen Sie Ihre Editor-Shortcuts zwischen VS Code, Zed, IntelliJ IDEA und Helix. Synchronisieren Sie Tastenkombinationen, steigern Sie die Produktivität und eliminieren Sie Kontextwechsel zwischen Code-Editoren.",
     keywords: [
@@ -143,7 +143,7 @@ export const seoConfig: Record<
     ],
   },
   es: {
-    title: "OneKeymap — Configura una vez, usa en todas partes",
+    title: "OneKeymap.app — Configura una vez, usa en todas partes",
     description:
       "Unifica tus atajos de editor entre VS Code, Zed, IntelliJ IDEA y Helix. Sincroniza combinaciones de teclas, aumenta la productividad y elimina el cambio de contexto entre editores de código.",
     keywords: [
